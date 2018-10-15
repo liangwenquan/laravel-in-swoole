@@ -17,8 +17,12 @@ class Currency extends Model
         return 'currency';
     }
 
-    function getTypeName()
+    public function getTypeName()
     {
         return 'currency_type_name';
+    }
+
+    public function addToIndex()
+    {
     }
 }
