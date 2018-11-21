@@ -25,4 +25,15 @@ class Currency extends Model
     public function addToIndex()
     {
     }
+
+    #模型中被写入文档的字断
+    public function getIndexDocumentData()
+    {
+        return [
+            'id'     => $this->id,
+            'name'   => $this->name,
+            'symbol' => $this->symbol,
+            'contract_address' => $this->contract_address,
+        ];
+    }
 }

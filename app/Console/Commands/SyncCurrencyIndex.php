@@ -43,6 +43,9 @@ class SyncCurrencyIndex extends Command
     {
         $currencies = Currency::where('id', '<', 200)->get();
         $currencies->addToIndex();
+
+//        Currency::deleteIndex();
+
         var_dump($currencies->toArray());
     }
 }
