@@ -13,6 +13,7 @@ class ComposerStaticInitc30b888c6e257732d49079bc8aff717f
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
+        'e8aa6e4b5a1db2f56ae794f1505391a8' => __DIR__ . '/..' . '/amphp/amp/lib/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
@@ -123,6 +124,7 @@ class ComposerStaticInitc30b888c6e257732d49079bc8aff717f
         'A' => 
         array (
             'App\\' => 4,
+            'Amp\\' => 4,
         ),
     );
 
@@ -325,6 +327,10 @@ class ComposerStaticInitc30b888c6e257732d49079bc8aff717f
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
+        'Amp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/amphp/amp/lib',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -346,6 +352,13 @@ class ComposerStaticInitc30b888c6e257732d49079bc8aff717f
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
             ),
         ),
+        'K' => 
+        array (
+            'Kafka\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/nmred/kafka-php/src',
+            ),
+        ),
         'J' => 
         array (
             'JakubOnderka\\PhpConsoleHighlighter' => 
@@ -363,6 +376,29 @@ class ComposerStaticInitc30b888c6e257732d49079bc8aff717f
     );
 
     public static $classMap = array (
+        'Amp\\CombinatorException' => __DIR__ . '/..' . '/amphp/amp/lib/CombinatorException.php',
+        'Amp\\CoroutineResult' => __DIR__ . '/..' . '/amphp/amp/lib/CoroutineResult.php',
+        'Amp\\CoroutineState' => __DIR__ . '/..' . '/amphp/amp/lib/CoroutineState.php',
+        'Amp\\Deferred' => __DIR__ . '/..' . '/amphp/amp/lib/Deferred.php',
+        'Amp\\EvReactor' => __DIR__ . '/..' . '/amphp/amp/lib/EvReactor.php',
+        'Amp\\Failure' => __DIR__ . '/..' . '/amphp/amp/lib/Failure.php',
+        'Amp\\LibeventReactor' => __DIR__ . '/..' . '/amphp/amp/lib/LibeventReactor.php',
+        'Amp\\NativeReactor' => __DIR__ . '/..' . '/amphp/amp/lib/NativeReactor.php',
+        'Amp\\Pause' => __DIR__ . '/..' . '/amphp/amp/lib/Pause.php',
+        'Amp\\Placeholder' => __DIR__ . '/..' . '/amphp/amp/lib/Placeholder.php',
+        'Amp\\PrivatePlaceholder' => __DIR__ . '/..' . '/amphp/amp/lib/PrivatePlaceholder.php',
+        'Amp\\PrivatePromisor' => __DIR__ . '/..' . '/amphp/amp/lib/PrivatePromisor.php',
+        'Amp\\Promise' => __DIR__ . '/..' . '/amphp/amp/lib/Promise.php',
+        'Amp\\PromiseStream' => __DIR__ . '/..' . '/amphp/amp/lib/PromiseStream.php',
+        'Amp\\Promisor' => __DIR__ . '/..' . '/amphp/amp/lib/Promisor.php',
+        'Amp\\PublicPromisor' => __DIR__ . '/..' . '/amphp/amp/lib/PublicPromisor.php',
+        'Amp\\Reactor' => __DIR__ . '/..' . '/amphp/amp/lib/Reactor.php',
+        'Amp\\Struct' => __DIR__ . '/..' . '/amphp/amp/lib/Struct.php',
+        'Amp\\Success' => __DIR__ . '/..' . '/amphp/amp/lib/Success.php',
+        'Amp\\TimeoutException' => __DIR__ . '/..' . '/amphp/amp/lib/TimeoutException.php',
+        'Amp\\UvReactor' => __DIR__ . '/..' . '/amphp/amp/lib/UvReactor.php',
+        'Amp\\Watcher' => __DIR__ . '/..' . '/amphp/amp/lib/Watcher.php',
+        'App\\Console\\Commands\\SyncCurrencyIndex' => __DIR__ . '/../..' . '/app/Console/Commands/SyncCurrencyIndex.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -370,13 +406,14 @@ class ComposerStaticInitc30b888c6e257732d49079bc8aff717f
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Http\\Controllers\\Swoole\\TestController' => __DIR__ . '/../..' . '/app/Http/Controllers/Swoole/TestController.php',
+        'App\\Http\\Controllers\\CurrencyController' => __DIR__ . '/../..' . '/app/Http/Controllers/CurrencyController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\Currency' => __DIR__ . '/../..' . '/app/Models/Currency.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -2051,6 +2088,42 @@ class ComposerStaticInitc30b888c6e257732d49079bc8aff717f
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
+        'Kafka\\Broker' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Broker.php',
+        'Kafka\\Config' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Config.php',
+        'Kafka\\Consumer' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Consumer.php',
+        'Kafka\\ConsumerConfig' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/ConsumerConfig.php',
+        'Kafka\\Consumer\\Assignment' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Consumer/Assignment.php',
+        'Kafka\\Consumer\\Process' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Consumer/Process.php',
+        'Kafka\\Consumer\\State' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Consumer/State.php',
+        'Kafka\\Exception' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Exception.php',
+        'Kafka\\Exception\\Config' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Exception/Config.php',
+        'Kafka\\Exception\\NotSupported' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Exception/NotSupported.php',
+        'Kafka\\Exception\\Protocol' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Exception/Protocol.php',
+        'Kafka\\Exception\\Socket' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Exception/Socket.php',
+        'Kafka\\LoggerTrait' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/LoggerTrait.php',
+        'Kafka\\Producer' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Producer.php',
+        'Kafka\\ProducerConfig' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/ProducerConfig.php',
+        'Kafka\\Producer\\Process' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Producer/Process.php',
+        'Kafka\\Producer\\State' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Producer/State.php',
+        'Kafka\\Producer\\SyncProcess' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Producer/SyncProcess.php',
+        'Kafka\\Protocol' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol.php',
+        'Kafka\\Protocol\\CommitOffset' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/CommitOffset.php',
+        'Kafka\\Protocol\\DescribeGroups' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/DescribeGroups.php',
+        'Kafka\\Protocol\\Fetch' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/Fetch.php',
+        'Kafka\\Protocol\\FetchOffset' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/FetchOffset.php',
+        'Kafka\\Protocol\\GroupCoordinator' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/GroupCoordinator.php',
+        'Kafka\\Protocol\\Heartbeat' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/Heartbeat.php',
+        'Kafka\\Protocol\\JoinGroup' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/JoinGroup.php',
+        'Kafka\\Protocol\\LeaveGroup' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/LeaveGroup.php',
+        'Kafka\\Protocol\\ListGroup' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/ListGroup.php',
+        'Kafka\\Protocol\\Metadata' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/Metadata.php',
+        'Kafka\\Protocol\\Offset' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/Offset.php',
+        'Kafka\\Protocol\\Produce' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/Produce.php',
+        'Kafka\\Protocol\\Protocol' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/Protocol.php',
+        'Kafka\\Protocol\\SyncGroup' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Protocol/SyncGroup.php',
+        'Kafka\\SingletonTrait' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/SingletonTrait.php',
+        'Kafka\\Socket' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/Socket.php',
+        'Kafka\\SocketSync' => __DIR__ . '/..' . '/nmred/kafka-php/src/Kafka/SocketSync.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
