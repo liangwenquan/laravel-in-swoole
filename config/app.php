@@ -165,6 +165,7 @@ return [
          */
         SwooleTW\Http\LaravelServiceProvider::class,
         Elasticquent\ElasticquentServiceProvider::class,
+        Overtrue\LaravelWeChat\ServiceProvider::class,
     ],
 
     /*
@@ -214,6 +215,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Es' => Elasticquent\ElasticquentElasticsearchFacade::class,
+        'EasyWeChat' => Overtrue\LaravelWeChat\Facade::class,
     ],
 
 ];
