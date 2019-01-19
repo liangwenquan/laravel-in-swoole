@@ -166,6 +166,7 @@ return [
         SwooleTW\Http\LaravelServiceProvider::class,
         Elasticquent\ElasticquentServiceProvider::class,
         Overtrue\LaravelWeChat\ServiceProvider::class,
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
     ],
 
     /*

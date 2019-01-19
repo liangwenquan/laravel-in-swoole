@@ -59,5 +59,8 @@ class Kernel extends HttpKernel
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'admin.auth' => \App\Http\Middleware\AdminAuth::class,
+        'cors' => \App\Http\Middleware\CORS::class, //自定义的跨域中间键
+        'custom.jwt' => \App\Http\Middleware\CustomJwtAuth::class,
     ];
 }
